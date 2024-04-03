@@ -915,6 +915,62 @@
 			}
 		]
 	},
+	"zen16_switch_type_v3": {
+		"valueSize": 1,
+		"defaultValue": 2,
+		"unsigned": true,
+		"allowManualEntry": false,
+		"options": [
+			{
+				"label": "Momentary",
+				"value": 0
+			},
+			{
+				"label": "Toggle (follow switch)",
+				"value": 1
+			},
+			{
+				"label": "Toggle (change state on toggle)",
+				"value": 2
+			},
+			{
+				"label": "Garage door (momentary mode for Z-Wave control)",
+				"value": 3
+			},
+			{
+				"label": "Leak Alarm (water sensor)",
+				"value": 4
+			},
+			{
+				"label": "heat alarm",
+				"value": 5
+			},
+			{
+				"label": "motion alert",
+				"value": 6
+			},
+			{
+				"label": "open/close alert (door sensor)",
+				"value": 7
+			},
+			{
+				"label": "CO alarm",
+				"value": 8
+			},
+			{
+				"label": "CO2 Alarm",
+				"value": 9
+			},
+			{
+				"label": "on/off report (dry contact switch/sensor)",
+				"value": 10
+			},
+			{
+				"label": "garage door mode for the relay (momentary contact) and door sensor type for the input (use with wired analog door/window sensors and garage gate openers)",
+				"value": 11
+			}
+		]
+	},
 	"zen16_manual_control": {
 		"valueSize": 1,
 		"defaultValue": 1,

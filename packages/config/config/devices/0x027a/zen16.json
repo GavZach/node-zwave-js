@@ -70,8 +70,14 @@
 		},
 		{
 			"#": "2",
-			"$if": "firmwareVersion >= 1.2",
+			"$if": "firmwareVersion >= 1.2 & firmwareVersion < 2.0",
 			"$import": "templates/zooz_template.json#zen16_switch_type_v2",
+			"label": "Switch 1: Type"
+		},
+		{
+			"#": "2",
+			"$if": "firmwareVersion >= 2.0",
+			"$import": "templates/zooz_template.json#zen16_switch_type_v3",
 			"label": "Switch 1: Type"
 		},
 		{
@@ -82,8 +88,14 @@
 		},
 		{
 			"#": "3",
-			"$if": "firmwareVersion >= 1.2",
+			"$if": "firmwareVersion >= 1.2 & < 2.0",
 			"$import": "templates/zooz_template.json#zen16_switch_type_v2",
+			"label": "Switch 2: Type"
+		},
+		{
+			"#": "3",
+			"$if": "firmwareVersion >= 2.0",
+			"$import": "templates/zooz_template.json#zen16_switch_type_v3",
 			"label": "Switch 2: Type"
 		},
 		{
@@ -94,8 +106,14 @@
 		},
 		{
 			"#": "4",
-			"$if": "firmwareVersion >= 1.2",
+			"$if": "firmwareVersion >= 1.2 & < 2.0",
 			"$import": "templates/zooz_template.json#zen16_switch_type_v2",
+			"label": "Switch 3: Type"
+		},
+		{
+			"#": "4",
+			"$if": "firmwareVersion >= 2.0",
+			"$import": "templates/zooz_template.json#zen16_switch_type_v3",
 			"label": "Switch 3: Type"
 		},
 		{
@@ -348,6 +366,24 @@
 			"$import": "~/templates/master_template.json#base_enable_disable",
 			"label": "DC Motor Mode",
 			"description": "When enabled only one relay may be on at a time, the other relay is automatically turned off."
+		},
+		{
+			"#": "28",
+			"$if": "firmwareVersion >= 2.0",
+			"$import": "templates/zooz_template.json#zen16_switch_type_v3",
+			"label": "Switch 1: Reversed Reports"
+		},
+		{
+			"#": "29",
+			"$if": "firmwareVersion >= 2.0",
+			"$import": "templates/zooz_template.json#zen16_switch_type_v3",
+			"label": "Switch 2: Reversed Reports"
+		},
+		{
+			"#": "30",
+			"$if": "firmwareVersion >= 2.0",
+			"$import": "templates/zooz_template.json#zen16_switch_type_v3",
+			"label": "Switch 3: Reversed Reports"
 		}
 	],
 	"compat": {
